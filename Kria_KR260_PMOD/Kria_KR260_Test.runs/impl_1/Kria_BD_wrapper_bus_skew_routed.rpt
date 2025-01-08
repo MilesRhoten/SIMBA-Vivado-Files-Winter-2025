@@ -1,0 +1,17 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date              : Fri Mar 15 14:24:59 2024
+| Host              : SIMBAA162 running 64-bit major release  (build 9200)
+| Command           : report_bus_skew -warn_on_violation -file Kria_BD_wrapper_bus_skew_routed.rpt -pb Kria_BD_wrapper_bus_skew_routed.pb -rpx Kria_BD_wrapper_bus_skew_routed.rpx
+| Design            : Kria_BD_wrapper
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
+| Temperature Grade : C
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

@@ -1,0 +1,106 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Fri Mar 15 14:24:40 2024
+| Host         : SIMBAA162 running 64-bit major release  (build 9200)
+| Command      : report_drc -file Kria_BD_wrapper_drc_routed.rpt -pb Kria_BD_wrapper_drc_routed.pb -rpx Kria_BD_wrapper_drc_routed.rpx
+| Design       : Kria_BD_wrapper
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 14
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 14         |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_0/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_0/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_0/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_1/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_1/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_1/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_10/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_10/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_10/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_11/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_11/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_11/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_12/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_12/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_12/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_13/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_13/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_13/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_2/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_2/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_2/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_3/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_3/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_3/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_4/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_4/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_4/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_5/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_5/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_5/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_6/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_6/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_6/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_7/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_7/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_7/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_8/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_8/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_8/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net Kria_BD_i/motor_controller_9/inst/H_BR_DRV/pwm_gen/clk_div is a gated clock net sourced by a combinational pin Kria_BD_i/motor_controller_9/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2/O, cell Kria_BD_i/motor_controller_9/inst/H_BR_DRV/pwm_gen/pwm_cntr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

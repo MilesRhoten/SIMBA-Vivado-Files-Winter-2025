@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Fri Mar 15 14:11:41 2024
+# Process ID: 5228
+# Current directory: C:/Users/simba/Desktop/Kria_KR260_PMOD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10264 C:\Users\simba\Desktop\Kria_KR260_PMOD\Kria_KR260_Test.xpr
+# Log file: C:/Users/simba/Desktop/Kria_KR260_PMOD/vivado.log
+# Journal file: C:/Users/simba/Desktop/Kria_KR260_PMOD\vivado.jou
+# Running On: SIMBAA162, OS: Windows, CPU Frequency: 3200 MHz, CPU Physical cores: 4, Host memory: 6436 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/simba/Desktop/Kria_KR260_PMOD/Kria_KR260_Test.xpr
+open_bd_design {C:/Users/simba/Desktop/Kria_KR260_PMOD/Kria_KR260_Test.srcs/sources_1/bd/Kria_BD/Kria_BD.bd}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

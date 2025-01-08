@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Jan  8 10:52:16 2025
+# Process ID: 7954
+# Current directory: /home/miles/Documents/Kria_KR260_PMOD
+# Command line: vivado
+# Log file: /home/miles/Documents/Kria_KR260_PMOD/vivado.log
+# Journal file: /home/miles/Documents/Kria_KR260_PMOD/vivado.jou
+# Running On        :miles-XPS-15-9510
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency     :800.807 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16474 MB
+# Swap memory       :2147 MB
+# Total Virtual     :18622 MB
+# Available Virtual :15957 MB
+#-----------------------------------------------------------
+start_gui
