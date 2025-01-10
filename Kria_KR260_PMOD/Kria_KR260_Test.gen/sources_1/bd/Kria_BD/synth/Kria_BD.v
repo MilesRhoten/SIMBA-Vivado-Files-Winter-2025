@@ -1,16 +1,16 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-//Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+//Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Tue Jan 30 14:36:33 2024
-//Host        : DESKTOP-04Q2LQT running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+//Date        : Wed Jan  8 11:21:24 2025
+//Host        : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 //Command     : generate_target Kria_BD.bd
 //Design      : Kria_BD
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "Kria_BD,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Kria_BD,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=64,numReposBlks=42,numNonXlnxBlks=0,numHierBlks=22,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=15,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=35,da_board_cnt=24,da_clkrst_cnt=20,da_zynq_ultra_ps_e_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "Kria_BD.hwdef" *) 
+(* CORE_GENERATION_INFO = "Kria_BD,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Kria_BD,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=64,numReposBlks=42,numNonXlnxBlks=0,numHierBlks=22,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=15,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=35,da_board_cnt=24,da_clkrst_cnt=20,da_zynq_ultra_ps_e_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "Kria_BD.hwdef" *) 
 module Kria_BD
    (encoder0,
     encoder1,

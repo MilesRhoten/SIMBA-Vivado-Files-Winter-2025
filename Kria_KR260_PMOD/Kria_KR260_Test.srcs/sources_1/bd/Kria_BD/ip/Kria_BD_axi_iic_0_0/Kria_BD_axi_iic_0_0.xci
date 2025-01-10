@@ -4,7 +4,7 @@
     "xci_name": "Kria_BD_axi_iic_0_0",
     "cell_name": "axi_iic_0",
     "component_reference": "xilinx.com:ip:axi_iic:2.1",
-    "ip_revision": "4",
+    "ip_revision": "7",
     "gen_directory": "../../../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ip/Kria_BD_axi_iic_0_0",
     "parameters": {
       "component_parameters": {
@@ -45,6 +45,7 @@
         "BASE_BOARD_PART": [ { "value": "xilinx.com:kr260_som:part0:1.1" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xck26" } ],
+        "NEXTGEN_VERSAL": [ { "value": "0" } ],
         "PACKAGE": [ { "value": "sfvc784" } ],
         "PREFHDL": [ { "value": "VERILOG" } ],
         "SILICON_REVISION": [ { "value": "" } ],
@@ -55,12 +56,12 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "4" } ],
+        "IPREVISION": [ { "value": "7" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ip/Kria_BD_axi_iic_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2023.1.1" } ],
+        "SWVERSION": [ { "value": "2024.1" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },
@@ -507,7 +508,7 @@
                       "is_volatile": true,
                       "access": "read-only"
                     },
-                    "ARW": {
+                    "SRW": {
                       "bit_offset": 3,
                       "bit_width": 1,
                       "display_name": "Slave Read/Write",

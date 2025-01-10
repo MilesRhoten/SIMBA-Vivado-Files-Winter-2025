@@ -15,6 +15,7 @@
         "BASE_BOARD_PART": [ { "value": "xilinx.com:kr260_som:part0:1.1" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xck26" } ],
+        "NEXTGEN_VERSAL": [ { "value": "0" } ],
         "PACKAGE": [ { "value": "sfvc784" } ],
         "PREFHDL": [ { "value": "VERILOG" } ],
         "SILICON_REVISION": [ { "value": "" } ],
@@ -30,7 +31,7 @@
         "OUTPUTDIR": [ { "value": "../../../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ip/Kria_BD_motor_controller_10_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2023.1" } ],
+        "SWVERSION": [ { "value": "2024.1" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },

@@ -1,5 +1,5 @@
 // (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// (c) Copyright 2022-2024 Advanced Micro Devices, Inc. All rights reserved.
+// (c) Copyright 2022-2025 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of AMD and is protected under U.S. and international copyright
@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:module_ref:motor_controller:1.0
 // IP Revision: 1
 
-(* X_CORE_INFO = "motor_controller,Vivado 2023.1" *)
+(* X_CORE_INFO = "motor_controller,Vivado 2024.1" *)
 (* CHECK_LICENSE_TYPE = "Kria_BD_motor_controller_9_0,motor_controller,{}" *)
-(* CORE_GENERATION_INFO = "Kria_BD_motor_controller_9_0,motor_controller,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=motor_controller,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "Kria_BD_motor_controller_9_0,motor_controller,{x_ipProduct=Vivado 2024.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=motor_controller,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module Kria_BD_motor_controller_9_0 (

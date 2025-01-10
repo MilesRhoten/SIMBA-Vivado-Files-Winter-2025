@@ -2,7 +2,22 @@ vhdl xil_defaultlib  \
 "../../../bd/Kria_BD/ip/Kria_BD_proc_sys_reset_0_0/sim/Kria_BD_proc_sys_reset_0_0.vhd" \
 "../../../bd/Kria_BD/ip/Kria_BD_proc_sys_reset_1_0/sim/Kria_BD_proc_sys_reset_1_0.vhd" \
 "../../../bd/Kria_BD/ip/Kria_BD_axi_intc_0_0/sim/Kria_BD_axi_intc_0_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_iic_0_0/sim/Kria_BD_axi_iic_0_0.vhd" \
 "../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_0_0/sim/Kria_BD_axi_gpio_0_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_1_0/sim/Kria_BD_axi_gpio_1_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_2_0/sim/Kria_BD_axi_gpio_2_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_3_0/sim/Kria_BD_axi_gpio_3_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_4_0/sim/Kria_BD_axi_gpio_4_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_5_0/sim/Kria_BD_axi_gpio_5_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_6_0/sim/Kria_BD_axi_gpio_6_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_7_0/sim/Kria_BD_axi_gpio_7_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_8_0/sim/Kria_BD_axi_gpio_8_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_9_0/sim/Kria_BD_axi_gpio_9_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_10_0/sim/Kria_BD_axi_gpio_10_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_11_0/sim/Kria_BD_axi_gpio_11_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_12_0/sim/Kria_BD_axi_gpio_12_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_13_0/sim/Kria_BD_axi_gpio_13_0.vhd" \
+"../../../bd/Kria_BD/ip/Kria_BD_axi_gpio_14_0/sim/Kria_BD_axi_gpio_14_0.vhd" \
 
 # Do not sort compile order
 nosort

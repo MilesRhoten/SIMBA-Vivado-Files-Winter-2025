@@ -1,5 +1,5 @@
 -- (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
--- (c) Copyright 2022-2023 Advanced Micro Devices, Inc. All rights reserved.
+-- (c) Copyright 2022-2025 Advanced Micro Devices, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of AMD and is protected under U.S. and international copyright
@@ -11,7 +11,7 @@
 -- otherwise provided in a valid license issued to you by
 -- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_intc:4.1
--- IP Revision: 17
+-- IP Revision: 19
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY axi_intc_v4_1_17;
-USE axi_intc_v4_1_17.axi_intc;
+LIBRARY axi_intc_v4_1_19;
+USE axi_intc_v4_1_19.axi_intc;
 
 ENTITY Kria_BD_axi_intc_0_0 IS
   PORT (
@@ -147,9 +147,9 @@ ARCHITECTURE Kria_BD_axi_intc_0_0_arch OF Kria_BD_axi_intc_0_0 IS
   END COMPONENT axi_intc;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_PARAMETER OF intr: SIGNAL IS "XIL_INTERFACENAME interrupt_input, SENSITIVITY LEVEL_HIGH, PORTWIDTH 1";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF intr: SIGNAL IS "XIL_INTERFACENAME interrupt_input, SENSITIVITY LEVEL_HIGH, PortWidth 1";
   ATTRIBUTE X_INTERFACE_INFO OF intr: SIGNAL IS "xilinx.com:signal:interrupt:1.0 interrupt_input INTERRUPT";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF irq: SIGNAL IS "XIL_INTERFACENAME interrupt_irq, SENSITIVITY LEVEL_HIGH, PORTWIDTH 1";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF irq: SIGNAL IS "XIL_INTERFACENAME interrupt_irq, SENSITIVITY LEVEL_HIGH, PortWidth 1";
   ATTRIBUTE X_INTERFACE_INFO OF irq: SIGNAL IS "xilinx.com:signal:interrupt:1.0 interrupt_irq INTERRUPT";
   ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_aclk: SIGNAL IS "XIL_INTERFACENAME s_axi_aclk, ASSOCIATED_BUSIF s_axi, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 199998000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Kria_BD_clk_wiz_0_1_clk_out1, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 s_axi_aclk CLK";

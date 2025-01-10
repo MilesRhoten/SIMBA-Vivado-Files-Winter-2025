@@ -1,9 +1,9 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-//Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+//Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Tue Jan 30 14:36:33 2024
-//Host        : DESKTOP-04Q2LQT running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+//Date        : Wed Jan  8 11:21:24 2025
+//Host        : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 //Command     : generate_target Kria_BD_wrapper.bd
 //Design      : Kria_BD_wrapper
 //Purpose     : IP block netlist

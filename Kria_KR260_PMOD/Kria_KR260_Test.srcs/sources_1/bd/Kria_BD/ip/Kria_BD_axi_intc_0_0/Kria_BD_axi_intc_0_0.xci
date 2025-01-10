@@ -4,7 +4,7 @@
     "xci_name": "Kria_BD_axi_intc_0_0",
     "cell_name": "axi_intc_0",
     "component_reference": "xilinx.com:ip:axi_intc:4.1",
-    "ip_revision": "17",
+    "ip_revision": "19",
     "gen_directory": "../../../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ip/Kria_BD_axi_intc_0_0",
     "parameters": {
       "component_parameters": {
@@ -70,6 +70,7 @@
         "BASE_BOARD_PART": [ { "value": "xilinx.com:kr260_som:part0:1.1" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xck26" } ],
+        "NEXTGEN_VERSAL": [ { "value": "0" } ],
         "PACKAGE": [ { "value": "sfvc784" } ],
         "PREFHDL": [ { "value": "VERILOG" } ],
         "SILICON_REVISION": [ { "value": "" } ],
@@ -80,12 +81,12 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "17" } ],
+        "IPREVISION": [ { "value": "19" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ip/Kria_BD_axi_intc_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2023.1.1" } ],
+        "SWVERSION": [ { "value": "2024.1" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },
@@ -146,8 +147,8 @@
             "MAX_BURST_LENGTH": [ { "value": "1", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "Kria_BD_clk_wiz_0_1_clk_out1", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "NUM_READ_THREADS": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "NUM_WRITE_THREADS": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "NUM_READ_THREADS": [ { "value": "1", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "NUM_WRITE_THREADS": [ { "value": "1", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "RUSER_BITS_PER_BYTE": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "WUSER_BITS_PER_BYTE": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
@@ -219,7 +220,7 @@
           "abstraction_type": "xilinx.com:signal:interrupt_rtl:1.0",
           "mode": "slave",
           "parameters": {
-            "SENSITIVITY": [ { "value": "LEVEL_HIGH", "value_src": "constant_prop", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "SENSITIVITY": [ { "value": "LEVEL_HIGH", "value_src": "constant_prop", "value_permission": "bd", "resolve_type": "generated", "usage": "all" } ],
             "PortWidth": [ { "value": "1", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
           },
           "port_maps": {
