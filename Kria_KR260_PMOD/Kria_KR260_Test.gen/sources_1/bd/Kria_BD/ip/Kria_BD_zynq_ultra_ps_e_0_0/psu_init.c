@@ -81,15 +81,15 @@ unsigned long psu_pll_init_data(void)
     *  PSU_CRL_APB_RPLL_CFG_LFHF                                   0x3
 
     * Lock circuit counter setting
-    *  PSU_CRL_APB_RPLL_CFG_LOCK_CNT                               0x271
+    *  PSU_CRL_APB_RPLL_CFG_LOCK_CNT                               0x258
 
     * Lock circuit configuration settings for lock windowsize
     *  PSU_CRL_APB_RPLL_CFG_LOCK_DLY                               0x3f
 
     * Helper data. Values are to be looked up in a table from Data Sheet
-    * (OFFSET, MASK, VALUE)      (0XFF5E0034, 0xFE7FEDEFU ,0x7E4E2C62U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E0034, 0xFE7FEDEFU ,0x7E4B0C62U)
     */
-	PSU_Mask_Write(CRL_APB_RPLL_CFG_OFFSET, 0xFE7FEDEFU, 0x7E4E2C62U);
+	PSU_Mask_Write(CRL_APB_RPLL_CFG_OFFSET, 0xFE7FEDEFU, 0x7E4B0C62U);
 /*##################################################################### */
 
     /*
@@ -104,16 +104,16 @@ unsigned long psu_pll_init_data(void)
     *  PSU_CRL_APB_RPLL_CTRL_PRE_SRC                               0x0
 
     * The integer portion of the feedback divider to the PLL
-    *  PSU_CRL_APB_RPLL_CTRL_FBDIV                                 0x3c
+    *  PSU_CRL_APB_RPLL_CTRL_FBDIV                                 0x40
 
     * This turns on the divide by 2 that is inside of the PLL. This does not c
     * hange the VCO frequency, just the output frequency
     *  PSU_CRL_APB_RPLL_CTRL_DIV2                                  0x1
 
     * PLL Basic Control
-    * (OFFSET, MASK, VALUE)      (0XFF5E0030, 0x00717F00U ,0x00013C00U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E0030, 0x00717F00U ,0x00014000U)
     */
-	PSU_Mask_Write(CRL_APB_RPLL_CTRL_OFFSET, 0x00717F00U, 0x00013C00U);
+	PSU_Mask_Write(CRL_APB_RPLL_CTRL_OFFSET, 0x00717F00U, 0x00014000U);
 /*##################################################################### */
 
     /*
@@ -253,21 +253,21 @@ unsigned long psu_pll_init_data(void)
     *  PSU_CRL_APB_IOPLL_CFG_RES                                   0x2
 
     * PLL charge pump control
-    *  PSU_CRL_APB_IOPLL_CFG_CP                                    0x4
+    *  PSU_CRL_APB_IOPLL_CFG_CP                                    0x3
 
     * PLL loop filter high frequency capacitor control
     *  PSU_CRL_APB_IOPLL_CFG_LFHF                                  0x3
 
     * Lock circuit counter setting
-    *  PSU_CRL_APB_IOPLL_CFG_LOCK_CNT                              0x258
+    *  PSU_CRL_APB_IOPLL_CFG_LOCK_CNT                              0x271
 
     * Lock circuit configuration settings for lock windowsize
     *  PSU_CRL_APB_IOPLL_CFG_LOCK_DLY                              0x3f
 
     * Helper data. Values are to be looked up in a table from Data Sheet
-    * (OFFSET, MASK, VALUE)      (0XFF5E0024, 0xFE7FEDEFU ,0x7E4B0C82U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E0024, 0xFE7FEDEFU ,0x7E4E2C62U)
     */
-	PSU_Mask_Write(CRL_APB_IOPLL_CFG_OFFSET, 0xFE7FEDEFU, 0x7E4B0C82U);
+	PSU_Mask_Write(CRL_APB_IOPLL_CFG_OFFSET, 0xFE7FEDEFU, 0x7E4E2C62U);
 /*##################################################################### */
 
     /*
@@ -282,16 +282,16 @@ unsigned long psu_pll_init_data(void)
     *  PSU_CRL_APB_IOPLL_CTRL_PRE_SRC                              0x0
 
     * The integer portion of the feedback divider to the PLL
-    *  PSU_CRL_APB_IOPLL_CTRL_FBDIV                                0x5a
+    *  PSU_CRL_APB_IOPLL_CTRL_FBDIV                                0x3c
 
     * This turns on the divide by 2 that is inside of the PLL. This does not c
     * hange the VCO frequency, just the output frequency
     *  PSU_CRL_APB_IOPLL_CTRL_DIV2                                 0x1
 
     * PLL Basic Control
-    * (OFFSET, MASK, VALUE)      (0XFF5E0020, 0x00717F00U ,0x00015A00U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E0020, 0x00717F00U ,0x00013C00U)
     */
-	PSU_Mask_Write(CRL_APB_IOPLL_CTRL_OFFSET, 0x00717F00U, 0x00015A00U);
+	PSU_Mask_Write(CRL_APB_IOPLL_CTRL_OFFSET, 0x00717F00U, 0x00013C00U);
 /*##################################################################### */
 
     /*
@@ -380,14 +380,14 @@ unsigned long psu_pll_init_data(void)
     * Register : IOPLL_TO_FPD_CTRL @ 0XFF5E0044
 
     * Divisor value for this clock.
-    *  PSU_CRL_APB_IOPLL_TO_FPD_CTRL_DIVISOR0                      0x3
+    *  PSU_CRL_APB_IOPLL_TO_FPD_CTRL_DIVISOR0                      0x2
 
     * Control for a clock that will be generated in the LPD, but used in the F
     * PD as a clock source for the peripheral clock muxes.
-    * (OFFSET, MASK, VALUE)      (0XFF5E0044, 0x00003F00U ,0x00000300U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E0044, 0x00003F00U ,0x00000200U)
     */
 	PSU_Mask_Write(CRL_APB_IOPLL_TO_FPD_CTRL_OFFSET,
-		0x00003F00U, 0x00000300U);
+		0x00003F00U, 0x00000200U);
 /*##################################################################### */
 
     /*
@@ -879,7 +879,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_QSPI_REF_CTRL_DIVISOR1                          0x1
 
     * 6 bit divider
-    *  PSU_CRL_APB_QSPI_REF_CTRL_DIVISOR0                          0xc
+    *  PSU_CRL_APB_QSPI_REF_CTRL_DIVISOR0                          0x8
 
     * 000 = IOPLL; 010 = RPLL; 011 = DPLL; (This signal may only be toggled af
     * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
@@ -887,48 +887,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_QSPI_REF_CTRL_SRCSEL                            0x0
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E0068, 0x013F3F07U ,0x01010C00U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E0068, 0x013F3F07U ,0x01010800U)
     */
 	PSU_Mask_Write(CRL_APB_QSPI_REF_CTRL_OFFSET,
-		0x013F3F07U, 0x01010C00U);
-/*##################################################################### */
-
-    /*
-    * Register : SDIO0_REF_CTRL @ 0XFF5E006C
-
-    * Clock active signal. Switch to 0 to disable the clock
-    *  PSU_CRL_APB_SDIO0_REF_CTRL_CLKACT                           0x1
-
-    * 6 bit divider
-    *  PSU_CRL_APB_SDIO0_REF_CTRL_DIVISOR1                         0x1
-
-    * 6 bit divider
-    *  PSU_CRL_APB_SDIO0_REF_CTRL_DIVISOR0                         0x5
-
-    * 000 = IOPLL; 010 = RPLL; 011 = VPLL; (This signal may only be toggled af
-    * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
-    *  usually an issue, but designers must be aware.)
-    *  PSU_CRL_APB_SDIO0_REF_CTRL_SRCSEL                           0x2
-
-    * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E006C, 0x013F3F07U ,0x01010502U)
-    */
-	PSU_Mask_Write(CRL_APB_SDIO0_REF_CTRL_OFFSET,
-		0x013F3F07U, 0x01010502U);
-/*##################################################################### */
-
-    /*
-    * Register : SDIO_CLK_CTRL @ 0XFF18030C
-
-    * MIO pad selection for sdio0_rx_clk (feedback clock from the PAD) 00: MIO
-    *  [22] 01: MIO [38] 10: MIO [64] 11: MIO [64]
-    *  PSU_IOU_SLCR_SDIO_CLK_CTRL_SDIO0_RX_SRC_SEL                 0
-
-    * SoC Debug Clock Control
-    * (OFFSET, MASK, VALUE)      (0XFF18030C, 0x00000003U ,0x00000000U)
-    */
-	PSU_Mask_Write(IOU_SLCR_SDIO_CLK_CTRL_OFFSET,
-		0x00000003U, 0x00000000U);
+		0x013F3F07U, 0x01010800U);
 /*##################################################################### */
 
     /*
@@ -941,7 +903,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_SPI1_REF_CTRL_DIVISOR1                          0x1
 
     * 6 bit divider
-    *  PSU_CRL_APB_SPI1_REF_CTRL_DIVISOR0                          0x8
+    *  PSU_CRL_APB_SPI1_REF_CTRL_DIVISOR0                          0x5
 
     * 000 = IOPLL; 010 = RPLL; 011 = DPLL; (This signal may only be toggled af
     * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
@@ -949,10 +911,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_SPI1_REF_CTRL_SRCSEL                            0x0
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E0080, 0x013F3F07U ,0x01010800U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E0080, 0x013F3F07U ,0x01010500U)
     */
 	PSU_Mask_Write(CRL_APB_SPI1_REF_CTRL_OFFSET,
-		0x013F3F07U, 0x01010800U);
+		0x013F3F07U, 0x01010500U);
 /*##################################################################### */
 
     /*
@@ -984,7 +946,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_IOU_SWITCH_CTRL_CLKACT                          0x1
 
     * 6 bit divider
-    *  PSU_CRL_APB_IOU_SWITCH_CTRL_DIVISOR0                        0x6
+    *  PSU_CRL_APB_IOU_SWITCH_CTRL_DIVISOR0                        0x4
 
     * 000 = RPLL; 010 = IOPLL; 011 = DPLL; (This signal may only be toggled af
     * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
@@ -992,10 +954,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_IOU_SWITCH_CTRL_SRCSEL                          0x2
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E009C, 0x01003F07U ,0x01000602U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E009C, 0x01003F07U ,0x01000402U)
     */
 	PSU_Mask_Write(CRL_APB_IOU_SWITCH_CTRL_OFFSET,
-		0x01003F07U, 0x01000602U);
+		0x01003F07U, 0x01000402U);
 /*##################################################################### */
 
     /*
@@ -1005,7 +967,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_PCAP_CTRL_CLKACT                                0x1
 
     * 6 bit divider
-    *  PSU_CRL_APB_PCAP_CTRL_DIVISOR0                              0x8
+    *  PSU_CRL_APB_PCAP_CTRL_DIVISOR0                              0x5
 
     * 000 = IOPLL; 010 = RPLL; 011 = DPLL; (This signal may only be toggled af
     * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
@@ -1013,9 +975,9 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_PCAP_CTRL_SRCSEL                                0x0
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E00A4, 0x01003F07U ,0x01000800U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E00A4, 0x01003F07U ,0x01000500U)
     */
-	PSU_Mask_Write(CRL_APB_PCAP_CTRL_OFFSET, 0x01003F07U, 0x01000800U);
+	PSU_Mask_Write(CRL_APB_PCAP_CTRL_OFFSET, 0x01003F07U, 0x01000500U);
 /*##################################################################### */
 
     /*
@@ -1025,7 +987,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_LPD_SWITCH_CTRL_CLKACT                          0x1
 
     * 6 bit divider
-    *  PSU_CRL_APB_LPD_SWITCH_CTRL_DIVISOR0                        0x3
+    *  PSU_CRL_APB_LPD_SWITCH_CTRL_DIVISOR0                        0x2
 
     * 000 = RPLL; 010 = IOPLL; 011 = DPLL; (This signal may only be toggled af
     * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
@@ -1033,10 +995,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_LPD_SWITCH_CTRL_SRCSEL                          0x2
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E00A8, 0x01003F07U ,0x01000302U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E00A8, 0x01003F07U ,0x01000202U)
     */
 	PSU_Mask_Write(CRL_APB_LPD_SWITCH_CTRL_OFFSET,
-		0x01003F07U, 0x01000302U);
+		0x01003F07U, 0x01000202U);
 /*##################################################################### */
 
     /*
@@ -1046,7 +1008,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_LPD_LSBUS_CTRL_CLKACT                           0x1
 
     * 6 bit divider
-    *  PSU_CRL_APB_LPD_LSBUS_CTRL_DIVISOR0                         0xf
+    *  PSU_CRL_APB_LPD_LSBUS_CTRL_DIVISOR0                         0xa
 
     * 000 = RPLL; 010 = IOPLL; 011 = DPLL; (This signal may only be toggled af
     * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
@@ -1054,10 +1016,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_LPD_LSBUS_CTRL_SRCSEL                           0x2
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E00AC, 0x01003F07U ,0x01000F02U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E00AC, 0x01003F07U ,0x01000A02U)
     */
 	PSU_Mask_Write(CRL_APB_LPD_LSBUS_CTRL_OFFSET,
-		0x01003F07U, 0x01000F02U);
+		0x01003F07U, 0x01000A02U);
 /*##################################################################### */
 
     /*
@@ -1067,7 +1029,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_DBG_LPD_CTRL_CLKACT                             0x1
 
     * 6 bit divider
-    *  PSU_CRL_APB_DBG_LPD_CTRL_DIVISOR0                           0x6
+    *  PSU_CRL_APB_DBG_LPD_CTRL_DIVISOR0                           0x4
 
     * 000 = RPLL; 010 = IOPLL; 011 = DPLL; (This signal may only be toggled af
     * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
@@ -1075,10 +1037,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_DBG_LPD_CTRL_SRCSEL                             0x2
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E00B0, 0x01003F07U ,0x01000602U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E00B0, 0x01003F07U ,0x01000402U)
     */
 	PSU_Mask_Write(CRL_APB_DBG_LPD_CTRL_OFFSET,
-		0x01003F07U, 0x01000602U);
+		0x01003F07U, 0x01000402U);
 /*##################################################################### */
 
     /*
@@ -1088,7 +1050,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_ADMA_REF_CTRL_CLKACT                            0x1
 
     * 6 bit divider
-    *  PSU_CRL_APB_ADMA_REF_CTRL_DIVISOR0                          0x3
+    *  PSU_CRL_APB_ADMA_REF_CTRL_DIVISOR0                          0x2
 
     * 000 = RPLL; 010 = IOPLL; 011 = DPLL; (This signal may only be toggled af
     * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
@@ -1096,10 +1058,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_ADMA_REF_CTRL_SRCSEL                            0x2
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E00B8, 0x01003F07U ,0x01000302U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E00B8, 0x01003F07U ,0x01000202U)
     */
 	PSU_Mask_Write(CRL_APB_ADMA_REF_CTRL_OFFSET,
-		0x01003F07U, 0x01000302U);
+		0x01003F07U, 0x01000202U);
 /*##################################################################### */
 
     /*
@@ -1112,7 +1074,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_PL0_REF_CTRL_DIVISOR1                           0x1
 
     * 6 bit divider
-    *  PSU_CRL_APB_PL0_REF_CTRL_DIVISOR0                           0xf
+    *  PSU_CRL_APB_PL0_REF_CTRL_DIVISOR0                           0xa
 
     * 000 = IOPLL; 010 = RPLL; 011 = DPLL; (This signal may only be toggled af
     * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
@@ -1120,10 +1082,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_PL0_REF_CTRL_SRCSEL                             0x0
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E00C0, 0x013F3F07U ,0x01010F00U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E00C0, 0x013F3F07U ,0x01010A00U)
     */
 	PSU_Mask_Write(CRL_APB_PL0_REF_CTRL_OFFSET,
-		0x013F3F07U, 0x01010F00U);
+		0x013F3F07U, 0x01010A00U);
 /*##################################################################### */
 
     /*
@@ -1136,7 +1098,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_PL1_REF_CTRL_DIVISOR1                           0x1
 
     * 6 bit divider
-    *  PSU_CRL_APB_PL1_REF_CTRL_DIVISOR0                           0xf
+    *  PSU_CRL_APB_PL1_REF_CTRL_DIVISOR0                           0xa
 
     * 000 = IOPLL; 010 = RPLL; 011 = DPLL; (This signal may only be toggled af
     * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
@@ -1144,10 +1106,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_PL1_REF_CTRL_SRCSEL                             0x0
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E00C4, 0x013F3F07U ,0x01010F00U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E00C4, 0x013F3F07U ,0x01010A00U)
     */
 	PSU_Mask_Write(CRL_APB_PL1_REF_CTRL_OFFSET,
-		0x013F3F07U, 0x01010F00U);
+		0x013F3F07U, 0x01010A00U);
 /*##################################################################### */
 
     /*
@@ -1157,7 +1119,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_AMS_REF_CTRL_DIVISOR1                           0x1
 
     * 6 bit divider
-    *  PSU_CRL_APB_AMS_REF_CTRL_DIVISOR0                           0x1e
+    *  PSU_CRL_APB_AMS_REF_CTRL_DIVISOR0                           0x14
 
     * 000 = RPLL; 010 = IOPLL; 011 = DPLL; (This signal may only be toggled af
     * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
@@ -1168,10 +1130,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_AMS_REF_CTRL_CLKACT                             0x1
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E0108, 0x013F3F07U ,0x01011E02U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E0108, 0x013F3F07U ,0x01011402U)
     */
 	PSU_Mask_Write(CRL_APB_AMS_REF_CTRL_OFFSET,
-		0x013F3F07U, 0x01011E02U);
+		0x013F3F07U, 0x01011402U);
 /*##################################################################### */
 
     /*
@@ -1193,7 +1155,7 @@ unsigned long psu_clock_init_data(void)
     * Register : TIMESTAMP_REF_CTRL @ 0XFF5E0128
 
     * 6 bit divider
-    *  PSU_CRL_APB_TIMESTAMP_REF_CTRL_DIVISOR0                     0xf
+    *  PSU_CRL_APB_TIMESTAMP_REF_CTRL_DIVISOR0                     0xa
 
     * 1XX = pss_ref_clk; 000 = IOPLL; 010 = RPLL; 011 = DPLL; (This signal may
     *  only be toggled after 4 cycles of the old clock and 4 cycles of the new
@@ -1204,10 +1166,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRL_APB_TIMESTAMP_REF_CTRL_CLKACT                       0x1
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFF5E0128, 0x01003F07U ,0x01000F00U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E0128, 0x01003F07U ,0x01000A00U)
     */
 	PSU_Mask_Write(CRL_APB_TIMESTAMP_REF_CTRL_OFFSET,
-		0x01003F07U, 0x01000F00U);
+		0x01003F07U, 0x01000A00U);
 /*##################################################################### */
 
     /*
@@ -1242,7 +1204,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRF_APB_DP_AUDIO_REF_CTRL_DIVISOR1                      0x1
 
     * 6 bit divider
-    *  PSU_CRF_APB_DP_AUDIO_REF_CTRL_DIVISOR0                      0x14
+    *  PSU_CRF_APB_DP_AUDIO_REF_CTRL_DIVISOR0                      0x16
 
     * 000 = VPLL; 010 = DPLL; 011 = RPLL_TO_FPD - might be using extra mux; (T
     * his signal may only be toggled after 4 cycles of the old clock and 4 cyc
@@ -1254,10 +1216,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRF_APB_DP_AUDIO_REF_CTRL_CLKACT                        0x1
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFD1A0074, 0x013F3F07U ,0x01011403U)
+    * (OFFSET, MASK, VALUE)      (0XFD1A0074, 0x013F3F07U ,0x01011603U)
     */
 	PSU_Mask_Write(CRF_APB_DP_AUDIO_REF_CTRL_OFFSET,
-		0x013F3F07U, 0x01011403U);
+		0x013F3F07U, 0x01011603U);
 /*##################################################################### */
 
     /*
@@ -1267,7 +1229,7 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRF_APB_DP_STC_REF_CTRL_DIVISOR1                        0x1
 
     * 6 bit divider
-    *  PSU_CRF_APB_DP_STC_REF_CTRL_DIVISOR0                        0x13
+    *  PSU_CRF_APB_DP_STC_REF_CTRL_DIVISOR0                        0x14
 
     * 000 = VPLL; 010 = DPLL; 011 = RPLL_TO_FPD; (This signal may only be togg
     * led after 4 cycles of the old clock and 4 cycles of the new clock. This
@@ -1278,10 +1240,10 @@ unsigned long psu_clock_init_data(void)
     *  PSU_CRF_APB_DP_STC_REF_CTRL_CLKACT                          0x1
 
     * This register controls this reference clock
-    * (OFFSET, MASK, VALUE)      (0XFD1A007C, 0x013F3F07U ,0x01011303U)
+    * (OFFSET, MASK, VALUE)      (0XFD1A007C, 0x013F3F07U ,0x01011403U)
     */
 	PSU_Mask_Write(CRF_APB_DP_STC_REF_CTRL_OFFSET,
-		0x013F3F07U, 0x01011303U);
+		0x013F3F07U, 0x01011403U);
 /*##################################################################### */
 
     /*
@@ -11850,7 +11812,7 @@ unsigned long psu_mio_init_data(void)
     * (8-bit Data bus) = sd0, Output, sdio0_data_out[0]- (8-bit Data bus) 2= t
     * est_scan, Input, test_scan_in[13]- (Test Scan Port) = test_scan, Output,
     *  test_scan_out[13]- (Test Scan Port) 3= Not Used
-    *  PSU_IOU_SLCR_MIO_PIN_13_L2_SEL                              1
+    *  PSU_IOU_SLCR_MIO_PIN_13_L2_SEL                              0
 
     * Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[13]- (GPIO bank 0) 0=
     * gpio0, Output, gpio_0_pin_out[13]- (GPIO bank 0) 1= can1, Input, can1_ph
@@ -11863,9 +11825,9 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_PIN_13_L3_SEL                              0
 
     * Configures MIO Pin 13 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF180034, 0x000000FEU ,0x00000008U)
+    * (OFFSET, MASK, VALUE)      (0XFF180034, 0x000000FEU ,0x00000000U)
     */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_13_OFFSET, 0x000000FEU, 0x00000008U);
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_13_OFFSET, 0x000000FEU, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -11882,7 +11844,7 @@ unsigned long psu_mio_init_data(void)
     * (8-bit Data bus) = sd0, Output, sdio0_data_out[1]- (8-bit Data bus) 2= t
     * est_scan, Input, test_scan_in[14]- (Test Scan Port) = test_scan, Output,
     *  test_scan_out[14]- (Test Scan Port) 3= Not Used
-    *  PSU_IOU_SLCR_MIO_PIN_14_L2_SEL                              1
+    *  PSU_IOU_SLCR_MIO_PIN_14_L2_SEL                              0
 
     * Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[14]- (GPIO bank 0) 0=
     * gpio0, Output, gpio_0_pin_out[14]- (GPIO bank 0) 1= can0, Input, can0_ph
@@ -11894,9 +11856,9 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_PIN_14_L3_SEL                              0
 
     * Configures MIO Pin 14 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF180038, 0x000000FEU ,0x00000008U)
+    * (OFFSET, MASK, VALUE)      (0XFF180038, 0x000000FEU ,0x00000000U)
     */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_14_OFFSET, 0x000000FEU, 0x00000008U);
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_14_OFFSET, 0x000000FEU, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -11913,7 +11875,7 @@ unsigned long psu_mio_init_data(void)
     * (8-bit Data bus) = sd0, Output, sdio0_data_out[2]- (8-bit Data bus) 2= t
     * est_scan, Input, test_scan_in[15]- (Test Scan Port) = test_scan, Output,
     *  test_scan_out[15]- (Test Scan Port) 3= Not Used
-    *  PSU_IOU_SLCR_MIO_PIN_15_L2_SEL                              1
+    *  PSU_IOU_SLCR_MIO_PIN_15_L2_SEL                              0
 
     * Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[15]- (GPIO bank 0) 0=
     * gpio0, Output, gpio_0_pin_out[15]- (GPIO bank 0) 1= can0, Output, can0_p
@@ -11926,9 +11888,9 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_PIN_15_L3_SEL                              0
 
     * Configures MIO Pin 15 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF18003C, 0x000000FEU ,0x00000008U)
+    * (OFFSET, MASK, VALUE)      (0XFF18003C, 0x000000FEU ,0x00000000U)
     */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_15_OFFSET, 0x000000FEU, 0x00000008U);
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_15_OFFSET, 0x000000FEU, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -11945,7 +11907,7 @@ unsigned long psu_mio_init_data(void)
     * (8-bit Data bus) = sd0, Output, sdio0_data_out[3]- (8-bit Data bus) 2= t
     * est_scan, Input, test_scan_in[16]- (Test Scan Port) = test_scan, Output,
     *  test_scan_out[16]- (Test Scan Port) 3= Not Used
-    *  PSU_IOU_SLCR_MIO_PIN_16_L2_SEL                              1
+    *  PSU_IOU_SLCR_MIO_PIN_16_L2_SEL                              0
 
     * Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[16]- (GPIO bank 0) 0=
     * gpio0, Output, gpio_0_pin_out[16]- (GPIO bank 0) 1= can1, Output, can1_p
@@ -11958,9 +11920,9 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_PIN_16_L3_SEL                              0
 
     * Configures MIO Pin 16 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF180040, 0x000000FEU ,0x00000008U)
+    * (OFFSET, MASK, VALUE)      (0XFF180040, 0x000000FEU ,0x00000000U)
     */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_16_OFFSET, 0x000000FEU, 0x00000008U);
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_16_OFFSET, 0x000000FEU, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -11977,7 +11939,7 @@ unsigned long psu_mio_init_data(void)
     * (8-bit Data bus) = sd0, Output, sdio0_data_out[4]- (8-bit Data bus) 2= t
     * est_scan, Input, test_scan_in[17]- (Test Scan Port) = test_scan, Output,
     *  test_scan_out[17]- (Test Scan Port) 3= Not Used
-    *  PSU_IOU_SLCR_MIO_PIN_17_L2_SEL                              1
+    *  PSU_IOU_SLCR_MIO_PIN_17_L2_SEL                              0
 
     * Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[17]- (GPIO bank 0) 0=
     * gpio0, Output, gpio_0_pin_out[17]- (GPIO bank 0) 1= can1, Input, can1_ph
@@ -11990,9 +11952,9 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_PIN_17_L3_SEL                              0
 
     * Configures MIO Pin 17 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF180044, 0x000000FEU ,0x00000008U)
+    * (OFFSET, MASK, VALUE)      (0XFF180044, 0x000000FEU ,0x00000000U)
     */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_17_OFFSET, 0x000000FEU, 0x00000008U);
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_17_OFFSET, 0x000000FEU, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -12010,7 +11972,7 @@ unsigned long psu_mio_init_data(void)
     * est_scan, Input, test_scan_in[18]- (Test Scan Port) = test_scan, Output,
     *  test_scan_out[18]- (Test Scan Port) 3= csu, Input, csu_ext_tamper- (CSU
     *  Ext Tamper)
-    *  PSU_IOU_SLCR_MIO_PIN_18_L2_SEL                              1
+    *  PSU_IOU_SLCR_MIO_PIN_18_L2_SEL                              0
 
     * Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[18]- (GPIO bank 0) 0=
     * gpio0, Output, gpio_0_pin_out[18]- (GPIO bank 0) 1= can0, Input, can0_ph
@@ -12022,9 +11984,9 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_PIN_18_L3_SEL                              0
 
     * Configures MIO Pin 18 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF180048, 0x000000FEU ,0x00000008U)
+    * (OFFSET, MASK, VALUE)      (0XFF180048, 0x000000FEU ,0x00000000U)
     */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_18_OFFSET, 0x000000FEU, 0x00000008U);
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_18_OFFSET, 0x000000FEU, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -12042,7 +12004,7 @@ unsigned long psu_mio_init_data(void)
     * est_scan, Input, test_scan_in[19]- (Test Scan Port) = test_scan, Output,
     *  test_scan_out[19]- (Test Scan Port) 3= csu, Input, csu_ext_tamper- (CSU
     *  Ext Tamper)
-    *  PSU_IOU_SLCR_MIO_PIN_19_L2_SEL                              1
+    *  PSU_IOU_SLCR_MIO_PIN_19_L2_SEL                              0
 
     * Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[19]- (GPIO bank 0) 0=
     * gpio0, Output, gpio_0_pin_out[19]- (GPIO bank 0) 1= can0, Output, can0_p
@@ -12054,9 +12016,9 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_PIN_19_L3_SEL                              0
 
     * Configures MIO Pin 19 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF18004C, 0x000000FEU ,0x00000008U)
+    * (OFFSET, MASK, VALUE)      (0XFF18004C, 0x000000FEU ,0x00000000U)
     */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_19_OFFSET, 0x000000FEU, 0x00000008U);
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_19_OFFSET, 0x000000FEU, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -12074,7 +12036,7 @@ unsigned long psu_mio_init_data(void)
     * est_scan, Input, test_scan_in[20]- (Test Scan Port) = test_scan, Output,
     *  test_scan_out[20]- (Test Scan Port) 3= csu, Input, csu_ext_tamper- (CSU
     *  Ext Tamper)
-    *  PSU_IOU_SLCR_MIO_PIN_20_L2_SEL                              1
+    *  PSU_IOU_SLCR_MIO_PIN_20_L2_SEL                              0
 
     * Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[20]- (GPIO bank 0) 0=
     * gpio0, Output, gpio_0_pin_out[20]- (GPIO bank 0) 1= can1, Output, can1_p
@@ -12086,9 +12048,9 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_PIN_20_L3_SEL                              0
 
     * Configures MIO Pin 20 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF180050, 0x000000FEU ,0x00000008U)
+    * (OFFSET, MASK, VALUE)      (0XFF180050, 0x000000FEU ,0x00000000U)
     */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_20_OFFSET, 0x000000FEU, 0x00000008U);
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_20_OFFSET, 0x000000FEU, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -12106,7 +12068,7 @@ unsigned long psu_mio_init_data(void)
     * t_scan, Input, test_scan_in[21]- (Test Scan Port) = test_scan, Output, t
     * est_scan_out[21]- (Test Scan Port) 3= csu, Input, csu_ext_tamper- (CSU E
     * xt Tamper)
-    *  PSU_IOU_SLCR_MIO_PIN_21_L2_SEL                              1
+    *  PSU_IOU_SLCR_MIO_PIN_21_L2_SEL                              0
 
     * Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[21]- (GPIO bank 0) 0=
     * gpio0, Output, gpio_0_pin_out[21]- (GPIO bank 0) 1= can1, Input, can1_ph
@@ -12119,9 +12081,9 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_PIN_21_L3_SEL                              0
 
     * Configures MIO Pin 21 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF180054, 0x000000FEU ,0x00000008U)
+    * (OFFSET, MASK, VALUE)      (0XFF180054, 0x000000FEU ,0x00000000U)
     */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_21_OFFSET, 0x000000FEU, 0x00000008U);
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_21_OFFSET, 0x000000FEU, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -12138,7 +12100,7 @@ unsigned long psu_mio_init_data(void)
     * (SDSDIO clock) 2= test_scan, Input, test_scan_in[22]- (Test Scan Port) =
     *  test_scan, Output, test_scan_out[22]- (Test Scan Port) 3= csu, Input, c
     * su_ext_tamper- (CSU Ext Tamper)
-    *  PSU_IOU_SLCR_MIO_PIN_22_L2_SEL                              1
+    *  PSU_IOU_SLCR_MIO_PIN_22_L2_SEL                              0
 
     * Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[22]- (GPIO bank 0) 0=
     * gpio0, Output, gpio_0_pin_out[22]- (GPIO bank 0) 1= can0, Input, can0_ph
@@ -12151,9 +12113,9 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_PIN_22_L3_SEL                              0
 
     * Configures MIO Pin 22 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF180058, 0x000000FEU ,0x00000008U)
+    * (OFFSET, MASK, VALUE)      (0XFF180058, 0x000000FEU ,0x00000000U)
     */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_22_OFFSET, 0x000000FEU, 0x00000008U);
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_22_OFFSET, 0x000000FEU, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -12170,7 +12132,7 @@ unsigned long psu_mio_init_data(void)
     * (SD card bus power) 2= test_scan, Input, test_scan_in[23]- (Test Scan Po
     * rt) = test_scan, Output, test_scan_out[23]- (Test Scan Port) 3= csu, Inp
     * ut, csu_ext_tamper- (CSU Ext Tamper)
-    *  PSU_IOU_SLCR_MIO_PIN_23_L2_SEL                              1
+    *  PSU_IOU_SLCR_MIO_PIN_23_L2_SEL                              0
 
     * Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[23]- (GPIO bank 0) 0=
     * gpio0, Output, gpio_0_pin_out[23]- (GPIO bank 0) 1= can0, Output, can0_p
@@ -12183,9 +12145,9 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_PIN_23_L3_SEL                              0
 
     * Configures MIO Pin 23 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF18005C, 0x000000FEU ,0x00000008U)
+    * (OFFSET, MASK, VALUE)      (0XFF18005C, 0x000000FEU ,0x00000000U)
     */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_23_OFFSET, 0x000000FEU, 0x00000008U);
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_23_OFFSET, 0x000000FEU, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -13244,7 +13206,7 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_BANK0_CTRL0_DRIVE0_BIT_5                       0
 
     * Each bit applies to a single IO. Bit 0 for MIO[0].
-    *  PSU_IOU_SLCR_BANK0_CTRL0_DRIVE0_BIT_6                       0
+    *  PSU_IOU_SLCR_BANK0_CTRL0_DRIVE0_BIT_6                       1
 
     * Each bit applies to a single IO. Bit 0 for MIO[0].
     *  PSU_IOU_SLCR_BANK0_CTRL0_DRIVE0_BIT_7                       0
@@ -13304,10 +13266,10 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_BANK0_CTRL0_DRIVE0_BIT_25                      0
 
     * Drive0 control to MIO Bank 0 - control MIO[25:0]
-    * (OFFSET, MASK, VALUE)      (0XFF180138, 0x03FFFFFFU ,0x00000000U)
+    * (OFFSET, MASK, VALUE)      (0XFF180138, 0x03FFFFFFU ,0x00000040U)
     */
 	PSU_Mask_Write(IOU_SLCR_BANK0_CTRL0_OFFSET,
-		0x03FFFFFFU, 0x00000000U);
+		0x03FFFFFFU, 0x00000040U);
 /*##################################################################### */
 
     /*
@@ -13686,7 +13648,7 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_BANK0_CTRL6_SLOW_FAST_SLEW_N_BIT_5             1
 
     * Each bit applies to a single IO. Bit 0 for MIO[0].
-    *  PSU_IOU_SLCR_BANK0_CTRL6_SLOW_FAST_SLEW_N_BIT_6             1
+    *  PSU_IOU_SLCR_BANK0_CTRL6_SLOW_FAST_SLEW_N_BIT_6             0
 
     * Each bit applies to a single IO. Bit 0 for MIO[0].
     *  PSU_IOU_SLCR_BANK0_CTRL6_SLOW_FAST_SLEW_N_BIT_7             1
@@ -13746,10 +13708,10 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_BANK0_CTRL6_SLOW_FAST_SLEW_N_BIT_25            1
 
     * Slew rate control to MIO Bank 0 - control MIO[25:0]
-    * (OFFSET, MASK, VALUE)      (0XFF18014C, 0x03FFFFFFU ,0x03FFFFFFU)
+    * (OFFSET, MASK, VALUE)      (0XFF18014C, 0x03FFFFFFU ,0x03FFFFBFU)
     */
 	PSU_Mask_Write(IOU_SLCR_BANK0_CTRL6_OFFSET,
-		0x03FFFFFFU, 0x03FFFFFFU);
+		0x03FFFFFFU, 0x03FFFFBFU);
 /*##################################################################### */
 
     /*
@@ -15041,112 +15003,6 @@ unsigned long psu_peripherals_init_data(void)
     /*
     * SD
     */
-    /*
-    * Register : RST_LPD_IOU2 @ 0XFF5E0238
-
-    * Block level reset
-    *  PSU_CRL_APB_RST_LPD_IOU2_SDIO0_RESET                        0
-
-    * Software control register for the IOU block. Each bit will cause a singl
-    * erperipheral or part of the peripheral to be reset.
-    * (OFFSET, MASK, VALUE)      (0XFF5E0238, 0x00000020U ,0x00000000U)
-    */
-	PSU_Mask_Write(CRL_APB_RST_LPD_IOU2_OFFSET,
-		0x00000020U, 0x00000000U);
-/*##################################################################### */
-
-    /*
-    * Register : CTRL_REG_SD @ 0XFF180310
-
-    * SD or eMMC selection on SDIO0 0: SD enabled 1: eMMC enabled
-    *  PSU_IOU_SLCR_CTRL_REG_SD_SD0_EMMC_SEL                       1
-
-    * SD eMMC selection
-    * (OFFSET, MASK, VALUE)      (0XFF180310, 0x00000001U ,0x00000001U)
-    */
-	PSU_Mask_Write(IOU_SLCR_CTRL_REG_SD_OFFSET,
-		0x00000001U, 0x00000001U);
-/*##################################################################### */
-
-    /*
-    * Register : SD_CONFIG_REG2 @ 0XFF180320
-
-    * Should be set based on the final product usage 00 - Removable SCard Slot
-    *  01 - Embedded Slot for One Device 10 - Shared Bus Slot 11 - Reserved
-    *  PSU_IOU_SLCR_SD_CONFIG_REG2_SD0_SLOTTYPE                    1
-
-    * 8-bit Support for Embedded Device 1: The Core supports 8-bit Interface 0
-    * : Supports only 4-bit SD Interface
-    *  PSU_IOU_SLCR_SD_CONFIG_REG2_SD0_8BIT                        1
-
-    * 1.8V Support 1: 1.8V supported 0: 1.8V not supported support
-    *  PSU_IOU_SLCR_SD_CONFIG_REG2_SD0_1P8V                        1
-
-    * 3.0V Support 1: 3.0V supported 0: 3.0V not supported support
-    *  PSU_IOU_SLCR_SD_CONFIG_REG2_SD0_3P0V                        0
-
-    * 3.3V Support 1: 3.3V supported 0: 3.3V not supported support
-    *  PSU_IOU_SLCR_SD_CONFIG_REG2_SD0_3P3V                        1
-
-    * SD Config Register 2
-    * (OFFSET, MASK, VALUE)      (0XFF180320, 0x00003384U ,0x00001284U)
-    */
-	PSU_Mask_Write(IOU_SLCR_SD_CONFIG_REG2_OFFSET,
-		0x00003384U, 0x00001284U);
-/*##################################################################### */
-
-    /*
-    * SD0 BASE CLOCK
-    */
-    /*
-    * Register : SD_CONFIG_REG1 @ 0XFF18031C
-
-    * Base Clock Frequency for SD Clock. This is the frequency of the xin_clk.
-    *  PSU_IOU_SLCR_SD_CONFIG_REG1_SD0_BASECLK                     0xc8
-
-    * Configures the Number of Taps (Phases) of the rxclk_in that is supported
-    *  for auto tuning mode
-    *  PSU_IOU_SLCR_SD_CONFIG_REG1_SD0_TUNIGCOUNT                  0x28
-
-    * SD Config Register 1
-    * (OFFSET, MASK, VALUE)      (0XFF18031C, 0x00007FFEU ,0x00006450U)
-    */
-	PSU_Mask_Write(IOU_SLCR_SD_CONFIG_REG1_OFFSET,
-		0x00007FFEU, 0x00006450U);
-/*##################################################################### */
-
-    /*
-    * Register : SD_DLL_CTRL @ 0XFF180358
-
-    * Reserved.
-    *  PSU_IOU_SLCR_SD_DLL_CTRL_RESERVED_2                         1
-
-    * SDIO status register
-    * (OFFSET, MASK, VALUE)      (0XFF180358, 0x00080000U ,0x00080000U)
-    */
-	PSU_Mask_Write(IOU_SLCR_SD_DLL_CTRL_OFFSET,
-		0x00080000U, 0x00080000U);
-/*##################################################################### */
-
-    /*
-    * SD0 RETUNER
-    */
-    /*
-    * Register : SD_CONFIG_REG3 @ 0XFF180324
-
-    * This is the Timer Count for Re-Tuning Timer for Re-Tuning Mode 1 to 3. S
-    * etting to 4'b0 disables Re-Tuning Timer. 0h - Get information via other
-    * source 1h = 1 seconds 2h = 2 seconds 3h = 4 seconds 4h = 8 seconds -- n
-    * = 2(n-1) seconds -- Bh = 1024 seconds Fh - Ch = Reserved
-    *  PSU_IOU_SLCR_SD_CONFIG_REG3_SD0_RETUNETMR                   0X0
-
-    * SD Config Register 3
-    * (OFFSET, MASK, VALUE)      (0XFF180324, 0x000003C0U ,0x00000000U)
-    */
-	PSU_Mask_Write(IOU_SLCR_SD_CONFIG_REG3_OFFSET,
-		0x000003C0U, 0x00000000U);
-/*##################################################################### */
-
     /*
     * CAN
     */

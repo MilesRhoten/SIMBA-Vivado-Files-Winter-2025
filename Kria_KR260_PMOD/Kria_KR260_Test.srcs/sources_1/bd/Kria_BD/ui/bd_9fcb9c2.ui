@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.534287",
-   "Default View_TopLeft":"-247,-167",
+   "Default View_TopLeft":"118,69",
    "ExpandedHierarchyInLayout":"",
    "PinnedBlocks":"/zynq_ultra_ps_e_0|/clk_wiz_0|/proc_sys_reset_0|/proc_sys_reset_1|/axi_intc_0|/ps8_0_axi_periph|/axi_iic_0|/motor_controller_0|/motor_controller_1|/motor_controller_2|/motor_controller_3|/motor_controller_4|/motor_controller_5|/motor_controller_6|/motor_controller_7|/motor_controller_8|/motor_controller_9|/motor_controller_10|/motor_controller_11|/motor_controller_12|/motor_controller_13|/axi_gpio_10|",
    "PinnedPorts":"motor0|encoder0|encoder1|motor1|motor2|encoder2|motor3|encoder3|motor4|encoder4|motor5|encoder5|motor6|encoder6|encoder7|motor7|motor8|encoder8|motor9|encoder9|motor10|encoder10|motor11|encoder11|motor12|encoder12|motor13|encoder13|iic|",

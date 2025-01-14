@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:40 2025
+| Date         : Mon Jan 13 11:27:53 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -30,7 +30,7 @@ Set parameter PSU__PROTECTION__FPD_SEGMENTS to value SA:0xFD1A0000; SIZE:1280; U
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:40 2025
+| Date         : Mon Jan 13 11:27:53 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -51,7 +51,7 @@ SUCCESS in the upgrade of Kria_BD_xlconstant_0_0 (xilinx.com:ip:xlconstant:1.1) 
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:40 2025
+| Date         : Mon Jan 13 11:27:53 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -72,7 +72,7 @@ SUCCESS in the upgrade of Kria_BD_ps8_0_axi_periph_0 (xilinx.com:ip:axi_intercon
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:40 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -93,7 +93,7 @@ SUCCESS in the upgrade of Kria_BD_proc_sys_reset_1_0 (xilinx.com:ip:proc_sys_res
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:40 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -114,7 +114,7 @@ SUCCESS in the upgrade of Kria_BD_proc_sys_reset_0_0 (xilinx.com:ip:proc_sys_res
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:40 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -135,7 +135,7 @@ SUCCESS in the upgrade of Kria_BD_clk_wiz_0_1 (xilinx.com:ip:clk_wiz:6.0) from (
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -161,7 +161,7 @@ Set parameter C_IVAR_RESET_VALUE to value 0x0000000000000010 (source 'default')
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -182,7 +182,7 @@ SUCCESS in the upgrade of Kria_BD_axi_iic_0_0 (xilinx.com:ip:axi_iic:2.1) from (
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -203,7 +203,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_9_0 (xilinx.com:ip:axi_gpio:2.0) from
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -224,7 +224,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_8_0 (xilinx.com:ip:axi_gpio:2.0) from
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -245,7 +245,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_7_0 (xilinx.com:ip:axi_gpio:2.0) from
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -266,7 +266,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_6_0 (xilinx.com:ip:axi_gpio:2.0) from
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -287,7 +287,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_5_0 (xilinx.com:ip:axi_gpio:2.0) from
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -308,7 +308,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_4_0 (xilinx.com:ip:axi_gpio:2.0) from
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -329,7 +329,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_3_0 (xilinx.com:ip:axi_gpio:2.0) from
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:52 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -350,7 +350,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_2_0 (xilinx.com:ip:axi_gpio:2.0) from
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:51 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -371,7 +371,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_1_0 (xilinx.com:ip:axi_gpio:2.0) from
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:51 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -392,7 +392,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_14_0 (xilinx.com:ip:axi_gpio:2.0) fro
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:39 2025
+| Date         : Mon Jan 13 11:27:51 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -413,7 +413,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_13_0 (xilinx.com:ip:axi_gpio:2.0) fro
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:38 2025
+| Date         : Mon Jan 13 11:27:51 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -434,7 +434,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_12_0 (xilinx.com:ip:axi_gpio:2.0) fro
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:38 2025
+| Date         : Mon Jan 13 11:27:51 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -455,7 +455,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_11_0 (xilinx.com:ip:axi_gpio:2.0) fro
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:38 2025
+| Date         : Mon Jan 13 11:27:51 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c
@@ -476,7 +476,7 @@ SUCCESS in the upgrade of Kria_BD_axi_gpio_10_0 (xilinx.com:ip:axi_gpio:2.0) fro
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Jan  8 11:16:38 2025
+| Date         : Mon Jan 13 11:27:51 2025
 | Host         : miles-XPS-15-9510 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : upgrade_ip
 | Device       : xck26-sfvc784-2LV-c

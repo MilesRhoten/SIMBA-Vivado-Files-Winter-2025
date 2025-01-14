@@ -11,16 +11,16 @@ vlib modelsim_lib/msim/lib_cdc_v1_0_3
 vlib modelsim_lib/msim/proc_sys_reset_v5_0_15
 vlib modelsim_lib/msim/axi_lite_ipif_v3_0_4
 vlib modelsim_lib/msim/axi_intc_v4_1_19
-vlib modelsim_lib/msim/lib_pkg_v1_0_4
-vlib modelsim_lib/msim/interrupt_control_v3_1_5
-vlib modelsim_lib/msim/axi_iic_v2_1_7
-vlib modelsim_lib/msim/axi_gpio_v2_0_33
-vlib modelsim_lib/msim/xlconstant_v1_1_9
 vlib modelsim_lib/msim/generic_baseblocks_v2_1_2
 vlib modelsim_lib/msim/axi_register_slice_v2_1_31
 vlib modelsim_lib/msim/fifo_generator_v13_2_10
 vlib modelsim_lib/msim/axi_data_fifo_v2_1_30
 vlib modelsim_lib/msim/axi_crossbar_v2_1_32
+vlib modelsim_lib/msim/lib_pkg_v1_0_4
+vlib modelsim_lib/msim/interrupt_control_v3_1_5
+vlib modelsim_lib/msim/axi_iic_v2_1_7
+vlib modelsim_lib/msim/axi_gpio_v2_0_33
+vlib modelsim_lib/msim/xlconstant_v1_1_9
 vlib modelsim_lib/msim/axi_protocol_converter_v2_1_31
 
 vmap xilinx_vip modelsim_lib/msim/xilinx_vip
@@ -33,16 +33,16 @@ vmap lib_cdc_v1_0_3 modelsim_lib/msim/lib_cdc_v1_0_3
 vmap proc_sys_reset_v5_0_15 modelsim_lib/msim/proc_sys_reset_v5_0_15
 vmap axi_lite_ipif_v3_0_4 modelsim_lib/msim/axi_lite_ipif_v3_0_4
 vmap axi_intc_v4_1_19 modelsim_lib/msim/axi_intc_v4_1_19
-vmap lib_pkg_v1_0_4 modelsim_lib/msim/lib_pkg_v1_0_4
-vmap interrupt_control_v3_1_5 modelsim_lib/msim/interrupt_control_v3_1_5
-vmap axi_iic_v2_1_7 modelsim_lib/msim/axi_iic_v2_1_7
-vmap axi_gpio_v2_0_33 modelsim_lib/msim/axi_gpio_v2_0_33
-vmap xlconstant_v1_1_9 modelsim_lib/msim/xlconstant_v1_1_9
 vmap generic_baseblocks_v2_1_2 modelsim_lib/msim/generic_baseblocks_v2_1_2
 vmap axi_register_slice_v2_1_31 modelsim_lib/msim/axi_register_slice_v2_1_31
 vmap fifo_generator_v13_2_10 modelsim_lib/msim/fifo_generator_v13_2_10
 vmap axi_data_fifo_v2_1_30 modelsim_lib/msim/axi_data_fifo_v2_1_30
 vmap axi_crossbar_v2_1_32 modelsim_lib/msim/axi_crossbar_v2_1_32
+vmap lib_pkg_v1_0_4 modelsim_lib/msim/lib_pkg_v1_0_4
+vmap interrupt_control_v3_1_5 modelsim_lib/msim/interrupt_control_v3_1_5
+vmap axi_iic_v2_1_7 modelsim_lib/msim/axi_iic_v2_1_7
+vmap axi_gpio_v2_0_33 modelsim_lib/msim/axi_gpio_v2_0_33
+vmap xlconstant_v1_1_9 modelsim_lib/msim/xlconstant_v1_1_9
 vmap axi_protocol_converter_v2_1_31 modelsim_lib/msim/axi_protocol_converter_v2_1_31
 
 vlog -work xilinx_vip -64 -incr -mfcu  -sv -L axi_vip_v1_1_17 -L zynq_ultra_ps_e_vip_v1_0_17 -L xilinx_vip "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
@@ -95,6 +95,30 @@ vcom -work axi_intc_v4_1_19 -64 -93  \
 
 vcom -work xil_defaultlib -64 -93  \
 "../../../bd/Kria_BD/ip/Kria_BD_axi_intc_0_0/sim/Kria_BD_axi_intc_0_0.vhd" \
+
+vlog -work generic_baseblocks_v2_1_2 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
+
+vlog -work axi_register_slice_v2_1_31 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+
+vlog -work fifo_generator_v13_2_10 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/1443/simulation/fifo_generator_vlog_beh.v" \
+
+vcom -work fifo_generator_v13_2_10 -64 -93  \
+"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/1443/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+vlog -work fifo_generator_v13_2_10 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/1443/hdl/fifo_generator_v13_2_rfs.v" \
+
+vlog -work axi_data_fifo_v2_1_30 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/9692/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
+
+vlog -work axi_crossbar_v2_1_32 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../bd/Kria_BD/ip/Kria_BD_xbar_0/sim/Kria_BD_xbar_0.v" \
 
 vcom -work lib_pkg_v1_0_4 -64 -93  \
 "../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/8c68/hdl/lib_pkg_v1_0_rfs.vhd" \
@@ -150,30 +174,7 @@ vlog -work xlconstant_v1_1_9 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Te
 
 vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/Kria_BD/ip/Kria_BD_xlconstant_0_0/sim/Kria_BD_xlconstant_0_0.v" \
-
-vlog -work generic_baseblocks_v2_1_2 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
-
-vlog -work axi_register_slice_v2_1_31 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v" \
-
-vlog -work fifo_generator_v13_2_10 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/1443/simulation/fifo_generator_vlog_beh.v" \
-
-vcom -work fifo_generator_v13_2_10 -64 -93  \
-"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/1443/hdl/fifo_generator_v13_2_rfs.vhd" \
-
-vlog -work fifo_generator_v13_2_10 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/1443/hdl/fifo_generator_v13_2_rfs.v" \
-
-vlog -work axi_data_fifo_v2_1_30 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/9692/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
-
-vlog -work axi_crossbar_v2_1_32 -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v" \
-
-vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../bd/Kria_BD/ip/Kria_BD_xbar_0/sim/Kria_BD_xbar_0.v" \
+"../../../bd/Kria_BD/sim/Kria_BD.v" \
 "../../../bd/Kria_BD/ip/Kria_BD_tier2_xbar_0_0/sim/Kria_BD_tier2_xbar_0_0.v" \
 "../../../bd/Kria_BD/ip/Kria_BD_tier2_xbar_1_0/sim/Kria_BD_tier2_xbar_1_0.v" \
 "../../../bd/Kria_BD/ip/Kria_BD_tier2_xbar_2_0/sim/Kria_BD_tier2_xbar_2_0.v" \
@@ -183,7 +184,6 @@ vlog -work axi_protocol_converter_v2_1_31 -64 -incr -mfcu  "+incdir+../../../../
 
 vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/ec67/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/a317/hdl" "+incdir+../../../../Kria_KR260_Test.gen/sources_1/bd/Kria_BD/ipshared/3242" "+incdir+/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/Kria_BD/ip/Kria_BD_auto_pc_0/sim/Kria_BD_auto_pc_0.v" \
-"../../../bd/Kria_BD/sim/Kria_BD.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"
